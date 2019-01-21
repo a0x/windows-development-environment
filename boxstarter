@@ -23,23 +23,21 @@ cinst -y nodejs.install
 npm install -g npm-windows-upgrade
 
 ## Editors
-cinst -y visualstudiocode
+# cinst -y visualstudiocode
 
 ## Visual Studio 2017
-cinst -y visualstudio2017community
-if (Test-PendingReboot) { Invoke-Reboot }
+# cinst -y visualstudio2017community
+# if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Ruby, Go, Python
 cinst -y ruby
 cinst -y ruby.devkit
 
-cinst -y python2
+cinst -y python3
 
 if (Test-PendingReboot) { Invoke-Reboot }
 
 ## Basics
-cinst -y vlc
-cinst -y GoogleChrome
 cinst -y 7zip.install
 cinst -y sysinternals
 cinst -y DotNet3.5
